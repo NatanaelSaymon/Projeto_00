@@ -20,12 +20,6 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-.container{
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
 .banner{
     background-image: url('../img/banner-principal.jpg');
     background-size: cover;
@@ -56,51 +50,4 @@ body{
     color: #000000;
     padding: 20px 40px; /* 20px NO TOP E NA BASE E 40PX NAS LATERAIS*/
     text-transform: uppercase;
-}
-
-/* DESTAQUES */
-.destaques{
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    padding: 60px;
-    width: 100%;
-    background-color: crimson;
-}
-
-.destaques ul{
-    list-style: none;
-    flex-basis: 33%;
-}
-
-.destaques .grid{
-    display: flex;
-    /* flex-wrap: wrap; */
-}
-
-.destaques .grid li{
-    padding: 0 50px;
-    text-align: center;
-}
-
-.destaques .grid li img{
-    margin-bottom: 30px;
-}
-
-.destaques .grid li h4{
-    font-size: 25px;
-}
-
-@media screen and (max-width: 840px){
-    .destaques .grid{
-        flex-direction: column;
-    }
-
-    .destaques .grid li{
-        margin-bottom: 40px;
-    }
-
-    .destaques .grid li:last-child{
-        margin-bottom: 0;
-    }
 }
