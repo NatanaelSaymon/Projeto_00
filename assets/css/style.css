@@ -16,6 +16,10 @@ ul, nav{
 	list-style: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -41,13 +45,166 @@ body{
 
 .banner h3{
     font-size: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
 .banner .btn{
     background-color: #FFFFFF;
-    border-radius: 5px;
+    border-radius: 50px;
     color: #000000;
-    padding: 20px 40px; /* 20px NO TOP E NA BASE E 40PX NAS LATERAIS*/
+    padding: 15px 35px; /* 15px NO TOP E NA BASE E 35PX NAS LATERAIS*/
     text-transform: uppercase;
 }
+
+@media(max-width: 800px){
+    .banner{
+        min-height: 500px;
+    }
+
+    .banner h1{
+        font-size: 32px;
+    }
+
+    .banner h3{
+        font-size: 20px;
+    }
+
+    .banner a.btn{
+        padding: 15px 40px;
+    }
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+}
+
+@media(max-width: 1000px){
+    section{
+        padding: 100px 50px;
+    }
+}
+
+@media(max-width: 600px){
+    section{
+        padding: 125px 30px;
+    }
+}
+
+/*DESTAQUE-AREA*/
+#destaque{
+    background-color: #ddd;
+}
+
+ul.destaque-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul.destaque-content li{
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
+}
+
+ul.destaque-content li h4{
+    font-size: 25px;
+}
+
+/*Mobile*/
+@media(max-width: 1000px){
+    ul.destaque-content li{
+        flex-basis: 100%;
+        margin-bottom: 65px;
+    }
+
+    ul.destaque-content li:last-child{
+        margin-bottom: 0;
+    }
+}
+
+/*Descricao01-area*/
+ul.descricao01-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul.descricao01-content li{
+    padding: 20px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+ul.descricao01-content .height{ /* HEIGHT FOI UM CLASSE CRIADA PARA DA ALTURA NA IMAGEM*/
+    height: 290px;
+}
+
+.descricao01-left{
+    flex-basis: 40%;
+    background-image: url('../img/img01.jpg');
+}
+
+.descricao01-right{
+    flex-basis: 60%;
+}
+
+.descricao01-area p{
+    max-width: 800px;
+    text-align: justify;
+}
+
+.section-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.descricao01-right h2{
+    margin-bottom: 3%;
+}
+
+/*Descricao01-area Mobile*/
+@media(max-width: 1000px){
+    .descricao01-left, .descricao01-right{
+        flex-basis: 100%;
+    }
+
+    .descricao01-content li{
+        padding: 8px;
+    }
+}
+
+#chamada{
+    background-color: #ddd;
+}
+
+/* .chamada-area{
+    padding: 30px 20px;
+}
+
+.chamada-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+h3.chamada-title{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+
+.chamada-content p{
+    font-size: 20px;
+} */
+
+
