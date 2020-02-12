@@ -162,6 +162,7 @@ ul.descricao01-content .height{ /* HEIGHT FOI UM CLASSE CRIADA PARA DA ALTURA NA
 
 .section-title{
     text-transform: uppercase;
+    text-align: center;
     font-size: 50px;
     margin-bottom: 5%;
 }
@@ -185,26 +186,73 @@ ul.descricao01-content .height{ /* HEIGHT FOI UM CLASSE CRIADA PARA DA ALTURA NA
     background-color: #ddd;
 }
 
-/* .chamada-area{
-    padding: 30px 20px;
+.chamada{
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.chamada-content{
+.chamada h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.chamada p{
+    font-size: 20px;
+}
+
+/*CONTACT-AREA*/
+#contact{
+    background-color: #ddd;
+}
+
+.contact-content{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
     justify-content: center;
 }
 
-h3.chamada-title{
-    text-transform: uppercase;
-    font-size: 30px;
-    margin-bottom: 5%;
+.contact-left{
+    flex-basis: 50%;
 }
 
-.chamada-content p{
-    font-size: 20px;
-} */
+.contact-left p{
+    text-align: justify;
+}
+
+.contact-right{
+    flex-basis: 50%;
+}
+
+.contact-right{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-cont{
+    justify-content: column;
+}
+
+.number{
+    width: 300px;
+    border: 1px solid #000000;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.email{
+    width: 300px;
+    border: 1px solid #000000;
+    padding: 5px;
+}
+
+@media(max-width: 1000px){
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+        padding: 10px;
+    }
 
 
+}
