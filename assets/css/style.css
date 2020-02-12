@@ -263,17 +263,24 @@ ul.descricao01-content .height{ /* HEIGHT FOI UM CLASSE CRIADA PARA DA ALTURA NA
     justify-content: column;
 }
 
-.number{
+.number, .email{
     width: 300px;
-    border: 1px solid #000000;
+    border: 1px solid #a6a6a6;
     padding: 5px;
     margin-bottom: 30px;
 }
 
 .email{
-    width: 300px;
-    border: 1px solid #000000;
-    padding: 5px;
+    margin-bottom: 0;
+}
+
+.number:hover{
+    background-color: #a6a6a6;
+    cursor: pointer;
+}
+.email:hover{
+    background-color: #a6a6a6;
+    cursor: pointer;
 }
 
 @media(max-width: 1000px){
@@ -292,4 +299,17 @@ footer{
 footer i{
     font-size: 25px;
     margin-right:10px;
+}
+
+i.fa-facebook:hover{
+    color: #3B579E;
+}
+i.fa-instagram:hover{
+    color: #9744A1;
+}
+i.fa-youtube:hover{
+    color: #FE0002;
+}
+i.fa-twitter:hover{
+    color: #2AA9E0;
 }
