@@ -78,18 +78,20 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 110px 100px;
+    /* padding: 110px 100px; */
+    padding: 50px 100px;
 }
 
 @media(max-width: 1000px){
     section{
-        padding: 100px 50px;
+        /* padding: 100px 50px; */
+        padding: 70px 50px;
     }
 }
 
 @media(max-width: 600px){
     section{
-        padding: 125px 30px;
+        padding: 30px 30px;
     }
 }
 
@@ -172,6 +174,15 @@ ul.descricao01-content .height{ /* HEIGHT FOI UM CLASSE CRIADA PARA DA ALTURA NA
 }
 
 /*Descricao01-area Mobile*/
+@media(max-width: 1100px){
+    .descricao01-left, .descricao01-right{
+        flex-basis: 100%;
+    }
+
+    .descricao01-content li{
+        padding: 8px;
+    }
+}
 @media(max-width: 1000px){
     .descricao01-left, .descricao01-right{
         flex-basis: 100%;
@@ -182,6 +193,23 @@ ul.descricao01-content .height{ /* HEIGHT FOI UM CLASSE CRIADA PARA DA ALTURA NA
     }
 }
 
+.order1{
+    order: 2;
+}
+.order2{
+    order: 1;
+}
+
+@media(max-width: 1000px){
+    .order1{
+        order: 1;
+    }
+    .order2{
+        order: 2;
+    }
+}
+
+/*CHAMADA-AREA*/
 #chamada{
     background-color: #ddd;
 }
@@ -253,6 +281,15 @@ ul.descricao01-content .height{ /* HEIGHT FOI UM CLASSE CRIADA PARA DA ALTURA NA
         flex-basis: 100%;
         padding: 10px;
     }
+}
 
+/* FOOTER */
+footer{
+    text-align: center;
+    padding: 20px;
+}
 
+footer i{
+    font-size: 25px;
+    margin-right:10px;
 }
