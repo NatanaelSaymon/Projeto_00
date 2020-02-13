@@ -1,3 +1,3 @@
 Site desenvolvido em FLEXBOX - Treino
 
-https://natanaelsaymon.github.io/Projeto-00/
+https://natanaelsaymon.github.io/Projeto_00/
